@@ -101,12 +101,12 @@ export const About = () => {
                               <div className="col-md-8 d-flex align-items-center">
                                 <p className="text-monospace">
                                   I'm a Dutch/Canadian student, spending most of
-                                  my life living on the carribbean island
+                                  my life living on the Caribbean island
                                   Curacao. I grew up loving to play soccer, and
                                   took an interest in football once I moved to
                                   Canada, but for the last 4 years I have been
                                   incredibly passionate about fitness and
-                                  working out. Not only has this benefitted my
+                                  working out. Not only has this benefited my
                                   health and lifestyle, but inspired my projects
                                   and fueled my passion for coding.
                                 </p>
