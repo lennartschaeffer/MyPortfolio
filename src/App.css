@@ -1,0 +1,26 @@
+.highlighted-text{
+    color: #FF6768;
+}
+.regular-text{
+    color: #FFF;
+}
+.bg-card{
+    background: #17223B;
+}
+.bg-lighter{
+    background: #263859;
+}
+.bg-red, .nav-pills .nav-link.active{
+    background: #FF6768;
+}
+.text-grey{
+    color:#6B778D;
+}
+body{
+    margin:0;
+    padding:0;
+    
+}
+.nav-link{
+    cursor: pointer;
+}
