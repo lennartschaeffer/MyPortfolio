@@ -30,7 +30,6 @@ export const Contact = () => {
     },
   };
 
-  console.log(form)
 
   return (
     <div className="bg-dark text-monospace text-white">
