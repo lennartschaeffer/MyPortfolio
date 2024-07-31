@@ -4,13 +4,12 @@ import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import catTyping from "../photos/catTyping.gif";
-import { useState } from "react";
-import { ToastContainer } from "react-toastify";
+import { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
 export const Contact = () => {
-
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -30,19 +29,20 @@ export const Contact = () => {
     },
   };
 
+  useEffect(() => {
+    setForm({ firstName: "", lastName: "", email: "", phone: "", message: "" });
+  }, []);
 
   return (
-    <div className="bg-dark text-monospace text-white">
-      <div className="card bg-lighter min-vh-100 pb-5">
-        <div className="card-header text-center">
-          <h3>Contact</h3>
-        </div>
+    <div className="bg-lighter text-monospace text-white">
+      <div className="card bg-lighter h-100 pb-5">
         <motion.div
           initial={offScreen}
           whileInView={onScreen}
           viewport={{ once: true }}
+          className="h-100"
         >
-          <div className="card-body h-100">
+          <div className="card-body h-100 ">
             <div className="row">
               <div className="col-md-4 mb-5 mb-md-0">
                 <div
@@ -99,7 +99,7 @@ export const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-8">
+              <div className="col-md-8 h-100">
                 <div
                   className="card bg-card text-white"
                   style={{
@@ -110,7 +110,7 @@ export const Contact = () => {
                   <div className="card-header">
                     <h4>Contact Me</h4>
                   </div>
-                  <div className="card-body d-flex justify-content-center">
+                  <div className="card-body d-flex justify-content-center h-100">
                     <form
                       action="https://formspree.io/f/xzzprryp"
                       method="POST"
@@ -167,9 +167,8 @@ export const Contact = () => {
                           onChange={(e) => setForm({ phone: e.target.value })}
                           id="phone"
                           type="tel"
-                          placeholder="(000)- 0000"
+                          placeholder="(000)-000-0000"
                           className="bg-lighter text-white rounded-lg"
-                          required
                         />
                       </div>
                       <div className="">
@@ -187,8 +186,8 @@ export const Contact = () => {
                       <div>
                         <input type="submit" className="btn btn-primary" />
                       </div>
-                      <ToastContainer />
                     </form>
+                    <ToastContainer />
                   </div>
                 </div>
               </div>

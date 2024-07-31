@@ -7,12 +7,7 @@ import { Contact } from "./Components/Contact";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 function App() {
-
-  
-
   return (
-    <>
-    
     <div className="App">
       <NavBar />      
       <section id="Home">
@@ -28,8 +23,6 @@ function App() {
         <Contact/>
       </section>
     </div>
-    </>
-    
   );
 }
 
