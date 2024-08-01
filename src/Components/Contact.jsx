@@ -35,13 +35,8 @@ export const Contact = () => {
 
   return (
     <div className="bg-lighter text-monospace text-white">
-      <div className="card bg-lighter h-100 pb-5">
-        <motion.div
-          initial={offScreen}
-          whileInView={onScreen}
-          viewport={{ once: true }}
-          className="h-100"
-        >
+      <div className="card bg-lighter h-100 ">
+       
           <div className="card-body h-100 ">
             <div className="row">
               <div className="col-md-4 mb-5 mb-md-0">
@@ -193,7 +188,7 @@ export const Contact = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+       
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ export const Projects = () => {
   };
   return (
     <div className="bg-card text-monospace">
-      <div className="card bg-lighter vh-100 pb-5">
+      <div className="card bg-lighter min-vh-100">
         <div className="card-header text-white">
           <div className="card-title text-center">
             <h4>Projects</h4>

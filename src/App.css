@@ -16,14 +16,6 @@
 .text-grey{
     color:#6B778D;
 }
-body{
-    margin:0;
-    padding:0;
-    
-}
 .nav-link{
     cursor: pointer;
-}
-html,body{
-    overflow-x: hidden;
 }
