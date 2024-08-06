@@ -7,8 +7,9 @@ import gym5 from "../photos/gym5.PNG";
 import api from "../photos/api.png";
 import api1 from "../photos/api1.png";
 import api2 from "../photos/api2.png";
-import pball1 from "../photos/pball1.png"
-import pball2 from "../photos/pball2.png"
+import webscrap1 from "../photos/webscrap2.png";
+import webscrap2 from "../photos/webscrap3.png";
+import webscrap from "../photos/webscrap.png";
 import { FaGithub } from "react-icons/fa";
 
 import { motion } from "framer-motion";
@@ -73,7 +74,9 @@ export const Projects = () => {
                           <div className="card-subtitle text-grey">
                             React Native, NativeWind, AppWrite, Expo
                           </div>
-                          <a href="https://github.com/lennartschaeffer/GymTracker"><FaGithub/> </a>
+                          <a href="https://github.com/lennartschaeffer/GymTracker">
+                            <FaGithub />{" "}
+                          </a>
                         </div>
                         <div className="card-body p-5 h-100">
                           <button
@@ -111,7 +114,9 @@ export const Projects = () => {
                             ASP.NET Core Web API's, ASP.NET Entity Framework,
                             SQL
                           </div>
-                          <a href="https://github.com/lennartschaeffer/MiddleEarthAPI"><FaGithub/> </a>
+                          <a href="https://github.com/lennartschaeffer/MiddleEarthAPI">
+                            <FaGithub />{" "}
+                          </a>
                         </div>
                         <div className="card-body  p-5">
                           <button
@@ -135,26 +140,24 @@ export const Projects = () => {
                         }}
                       >
                         <img
-                          src={pballPic}
+                          src={webscrap}
                           className="card-img-top"
                           alt="..."
                           style={{ height: 220 }}
                         />
                         <div className="card-header">
                           <div className="card-title highlighted-text">
-                            Pickleball Team Generator
+                            Supplement Stores Web Scraper
                           </div>
                           <div className="card-subtitle text-grey">
-                            HTML, CSS, JS
+                            Python, Flask, BeautifulSoup
                           </div>
                         </div>
                         <div className="card-body p-5">
-                          
-
                           <button
                             className="btn bg-red text-white w-100"
                             data-toggle="modal"
-                            data-target="#pickleBallModal"
+                            data-target="#webScrapModal"
                           >
                             See More
                           </button>
@@ -282,21 +285,27 @@ export const Projects = () => {
                   </div>
                 </div>
                 <div className="modal-footer">
-                  <p className="card-text">
-                    Full Stack React Native iOS app, allowing users to track
-                    workouts, logging every exercise, set, rep, and weight they
-                    complete. However, GymTracker is not limited to simply
-                    tracking workouts. Users can post videos and photos about
-                    their workouts, which will then show up on the Feed tab for
-                    all users who are authenticated.
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
+                  <div className="row">
+                    <div className="col-12">
+                      <p className="card-text">
+                        Full Stack React Native iOS app, allowing users to track
+                        workouts, logging every exercise, set, rep, and weight
+                        they complete. However, GymTracker is not limited to
+                        simply tracking workouts. Users can post videos and
+                        photos about their workouts, which will then show up on
+                        the Feed tab for all users who are authenticated.
+                      </p>
+                    </div>
+                    <div className="col-12 d-flex justify-content-end">
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -373,27 +382,33 @@ export const Projects = () => {
                   </div>
                 </div>
                 <div className="modal-footer">
-                  <p className="card-text">
-                    Controller-based web API using a SQL database and ASP.NET
-                    Entity Framework for ORM. MiddleEarthAPI supports all CRUD
-                    operations, and is made to provide information on characters
-                    from Tolkien's infamous Lord of The Rings Series. The
-                    character information includes their first and last name,
-                    home, race (Hobbit, Elf, etc...), other names they go by,
-                    and a photo URL.
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
+                  <div className="row">
+                    <div className="col-12">
+                      <p className="card-text">
+                        Controller-based web API using a SQL database and
+                        ASP.NET Entity Framework. MiddleEarthAPI supports all
+                        CRUD operations, and is made to provide information on
+                        characters from Tolkien's infamous Lord of The Rings
+                        Series. The character information includes their first
+                        and last name, home, race (Hobbit, Elf, etc...), other
+                        names they go by, and a photo URL.
+                      </p>
+                    </div>
+                    <div className="col-12 d-flex justify-content-end">
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="modal fade" id="pickleBallModal" tabIndex="-1">
+          <div className="modal fade" id="webScrapModal" tabIndex="-1">
             <div
               className="modal-dialog modal-dialog-centered modal-lg"
               role="document"
@@ -401,7 +416,7 @@ export const Projects = () => {
               <div className="modal-content bg-card text-white">
                 <div className="modal-header ">
                   <h5 className="modal-title" id="exampleModalLabel">
-                    Modal title
+                    Supplement Store Web Scraper
                   </h5>
                   <button
                     type="button"
@@ -414,32 +429,51 @@ export const Projects = () => {
                 </div>
                 <div className="modal-body">
                   <div
-                    id="pballCarousel"
+                    id="webScrapCarousel"
                     className="carousel slide"
                     data-ride="carousel"
                   >
                     <ol className="carousel-indicators">
                       <li
-                        data-target="#pballCarousel"
+                        data-target="#webScrapCarousel"
                         data-slide-to="0"
                         className="active"
                       ></li>
                       <li
-                        data-target="#pballCarousel"
+                        data-target="#webScrapCarousel"
                         data-slide-to="1"
+                      ></li>
+                      <li
+                        data-target="#webScrapCarousel"
+                        data-slide-to="2"
                       ></li>
                     </ol>
                     <div className="carousel-inner">
                       <div className="carousel-item active">
-                        <img src={pball1} className="d-block w-100" alt="..." />
+                        <img
+                          src={webscrap}
+                          className="d-block w-100"
+                          alt="..."
+                        />
                       </div>
                       <div className="carousel-item">
-                        <img src={pball2} className="d-block w-100" alt="..." />
+                        <img
+                          src={webscrap1}
+                          className="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div className="carousel-item">
+                        <img
+                          src={webscrap2}
+                          className="d-block w-100"
+                          alt="..."
+                        />
                       </div>
                     </div>
                     <a
                       className="carousel-control-prev"
-                      href="#pballCarousel"
+                      href="#webScrapCarousel"
                       role="button"
                       data-slide="prev"
                     >
@@ -451,7 +485,7 @@ export const Projects = () => {
                     </a>
                     <a
                       className="carousel-control-next"
-                      href="#pballCarousel"
+                      href="#webScrapCarousel"
                       role="button"
                       data-slide="next"
                     >
@@ -464,21 +498,33 @@ export const Projects = () => {
                   </div>
                 </div>
                 <div className="modal-footer">
-                  <p className="card-text">
-                            I created this web app for my dad's Pickleball club
-                            to randomly generate teams, ensuring a new
-                            randomization after every game until every player
-                            has been on a team with each other. It will also
-                            assign substitute players, until every player has
-                            been a sub.
-                          </p>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
+                  <div className="row">
+                    <div className="col-12">
+                      <p className="card-text">
+                        Often times, I've made a big purchase on supplements for
+                        the gym, just to find out the other store had it for a
+                        better price! This Python Web Scraper solves that
+                        problem. With BeautifulSoup, a Python Web-Scraping
+                        library, I scraped content from Supplement King and
+                        Popeye's Supplements, the two biggest supplement stores
+                        in the Maritimes. After getting the necessary data, I
+                        divided it into Pre-workouts, Protein Powders, and
+                        Creatine, and used Flask and the DataTables library to
+                        display the content. You can simply search for your
+                        desired supplement and find the best pricing, along with
+                        a link to the product on the company's website.
+                      </p>
+                    </div>
+                    <div className="col-12 d-flex justify-content-end">
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
