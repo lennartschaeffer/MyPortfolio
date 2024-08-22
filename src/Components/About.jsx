@@ -15,7 +15,7 @@ export const About = () => {
     }
   }
   return (
-    <div className="bg-lighter text-dark text-monospace d-flex align-items-center">
+    <div className="bg-lighter text-dark text-monospace d-flex align-items-center justify-content-center">
       <div className="card border-0 " style={{background: "#263859"}}>
         <div className="card-body min-vh-100 d-flex flex-column justify-content-center">
           <div className="row pb-5">
