@@ -223,16 +223,16 @@ export const About = () => {
                                 <div className="col-md-4">
                                   <ul className="list-group list-group-flush">
                                     <li className="list-group-item bg-lighter">
-                                      React
+                                      React & React Native
                                     </li>
                                     <li className="list-group-item bg-lighter">
                                       ASP.NET Core MVC
                                     </li>
                                     <li className="list-group-item bg-lighter">
-                                      Tailwind
+                                      ASP.NET Core Web API's
                                     </li>
                                     <li className="list-group-item bg-lighter">
-                                      jQuery
+                                      Tailwind CSS
                                     </li>
                                     <li className="list-group-item bg-lighter">
                                       Bootstrap

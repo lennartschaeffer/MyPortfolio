@@ -4,9 +4,10 @@ import gym1 from "../photos/gym1.PNG";
 import gym2 from "../photos/gym2.PNG";
 import gym3 from "../photos/gym3.PNG";
 import gym5 from "../photos/gym5.PNG";
-import api from "../photos/api.png";
-import api1 from "../photos/api1.png";
-import api2 from "../photos/api2.png";
+import mdearth from "../photos/mdearth1.png";
+import mdearth2 from "../photos/mdearth2.png";
+import mdearth3 from "../photos/mdearth3.png";
+import mdearth4 from "../photos/mdearth4.png";
 import webscrap1 from "../photos/webscrap2.png";
 import webscrap2 from "../photos/webscrap3.png";
 import webscrap from "../photos/webscrap.png";
@@ -101,18 +102,18 @@ export const Projects = () => {
                         }}
                       >
                         <img
-                          src={api}
+                          src={mdearth}
                           className="card-img-top "
                           alt="..."
                           style={{ height: 220 }}
                         />
                         <div className="card-header">
                           <div className="card-title highlighted-text">
-                            MiddleEarthAPI
+                            Middle Earth Characters Full Stack Web App
                           </div>
                           <div className="card-subtitle text-grey">
-                            ASP.NET Core Web API's, ASP.NET Entity Framework,
-                            SQL
+                            ASP.NET Core Web API's, React, Entity Framework,
+                            Azure
                           </div>
                           <a href="https://github.com/lennartschaeffer/MiddleEarthAPI">
                             <FaGithub />{" "}
@@ -318,7 +319,7 @@ export const Projects = () => {
               <div className="modal-content bg-card text-white">
                 <div className="modal-header ">
                   <h5 className="modal-title" id="exampleModalLabel">
-                    MiddleEarthAPI
+                    Middle Earth Characters
                   </h5>
                   <button
                     type="button"
@@ -343,16 +344,36 @@ export const Projects = () => {
                       ></li>
                       <li data-target="#apiCarousel" data-slide-to="1"></li>
                       <li data-target="#apiCarousel" data-slide-to="2"></li>
+                      <li data-target="#apiCarousel" data-slide-to="3"></li>
                     </ol>
                     <div className="carousel-inner">
                       <div className="carousel-item active">
-                        <img src={api1} className="d-block w-100" alt="..." />
+                        <img
+                          src={mdearth}
+                          className="d-block w-100"
+                          alt="..."
+                        />
                       </div>
                       <div className="carousel-item">
-                        <img src={api} className="d-block w-100" alt="..." />
+                        <img
+                          src={mdearth2}
+                          className="d-block w-100"
+                          alt="..."
+                        />
                       </div>
                       <div className="carousel-item">
-                        <img src={api2} className="d-block w-100" alt="..." />
+                        <img
+                          src={mdearth3}
+                          className="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div className="carousel-item">
+                        <img
+                          src={mdearth4}
+                          className="d-block w-100"
+                          alt="..."
+                        />
                       </div>
                     </div>
                     <a
@@ -385,13 +406,15 @@ export const Projects = () => {
                   <div className="row">
                     <div className="col-12">
                       <p className="card-text">
-                        Controller-based web API using a SQL database and
-                        ASP.NET Entity Framework. MiddleEarthAPI supports all
-                        CRUD operations, and is made to provide information on
-                        characters from Tolkien's infamous Lord of The Rings
-                        Series. The character information includes their first
-                        and last name, home, race (Hobbit, Elf, etc...), other
-                        names they go by, and a photo URL.
+                        Full-Stack Web Application that lets users create,
+                        update, and delete Character Profiles from Tolkien's
+                        Lord of The Rings and the Hobbit. Profiles consist of
+                        pictures as well as character information, users can
+                        also access or add a biography by clicking on the book
+                        icon on each profile. Characters can be sorted by
+                        attributes like Location or Race, which can also be created
+                        if a Location or Race does not yet exist. 
+        
                       </p>
                     </div>
                     <div className="col-12 d-flex justify-content-end">
