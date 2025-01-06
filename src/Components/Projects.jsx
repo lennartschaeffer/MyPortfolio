@@ -18,6 +18,9 @@ import study4 from "../photos/study4.png";
 import emission1 from "../photos/emission1.png";
 import emission2 from "../photos/emission2.png";
 import emission3 from "../photos/emission3.png";
+import squat1 from "../photos/squat1.png";
+import squat2 from "../photos/squat2.png";
+import squatvid from "../photos/squatvid.mp4";
 
 import { FaGithub } from "react-icons/fa";
 
@@ -61,6 +64,7 @@ export const Projects = () => {
                   <li data-target="#projectsCarousel" data-slide-to="2"></li>
                   <li data-target="#projectsCarousel" data-slide-to="3"></li>
                   <li data-target="#projectsCarousel" data-slide-to="4"></li>
+                  <li data-target="#projectsCarousel" data-slide-to="5"></li>
                 </ol>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
@@ -133,6 +137,44 @@ export const Projects = () => {
                             className="btn bg-red text-white w-100"
                             data-toggle="modal"
                             data-target="#middleEarthApiModal"
+                          >
+                            See More
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <div className="col-lg-4 d-block w-100 m-auto">
+                      <div
+                        className="card bg-card text-light h-100"
+                        style={{
+                          boxShadow:
+                            "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+                        }}
+                      >
+                        <img
+                          src={squat2}
+                          className="card-img-top"
+                          alt="..."
+                          style={{ height: 220 }}
+                        />
+                        <div className="card-header">
+                          <div className="card-title highlighted-text">
+                            SBDAnalyzer
+                          </div>
+                          <div className="card-subtitle text-grey">
+                            Python, OpenCV, MediaPipe
+                          </div>
+                          <a href="https://github.com/lennartschaeffer/SBDAnalyzer">
+                            <FaGithub />{" "}
+                          </a>
+                        </div>
+                        <div className="card-body p-5">
+                          <button
+                            className="btn bg-red text-white w-100"
+                            data-toggle="modal"
+                            data-target="#sbdModal"
                           >
                             See More
                           </button>
@@ -486,6 +528,99 @@ export const Projects = () => {
                         trends and correlations, offering insights into algae's
                         role in carbon sequestration and its potential to
                         mitigate climate change.
+                      </p>
+                    </div>
+                    <div className="col-12 d-flex justify-content-end">
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="modal fade" id="sbdModal" tabIndex="-1">
+            <div
+              className="modal-dialog modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div className="modal-content bg-card text-white">
+                <div className="modal-header ">
+                  <h5 className="modal-title" id="exampleModalLabel">
+                    SBDAnalyzer
+                  </h5>
+                  <button
+                    type="button"
+                    className="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div className="modal-body">
+                  <div
+                    id="sbdCarousel"
+                    className="carousel slide"
+                    data-ride="carousel"
+                  >
+                    <ol className="carousel-indicators">
+                      <li
+                        data-target="#sbdCarousel"
+                        data-slide-to="0"
+                        className="active"
+                      ></li>
+                      <li data-target="#sbdCarousel" data-slide-to="1"></li>
+                      <li data-target="#sbdCarousel" data-slide-to="2"></li>
+                      
+                    </ol>
+                    <div className="carousel-inner">
+                      <div className="carousel-item active">
+                        <img src={squat1} className="d-block w-50 h-50 m-auto" alt="..." />
+                      </div>
+                      <div className="carousel-item">
+                        <img src={squat2} className="d-block w-100" alt="..." />
+                      </div>
+                      <div className="carousel-item">
+                        <video src={squatvid} className="d-block w-50 h-50 m-auto" controls />
+                      </div>
+                    </div>
+                    <a
+                      className="carousel-control-prev"
+                      href="#sbdCarousel"
+                      role="button"
+                      data-slide="prev"
+                    >
+                      <span
+                        className="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span className="sr-only">Previous</span>
+                    </a>
+                    <a
+                      className="carousel-control-next"
+                      href="#sbdCarousel"
+                      role="button"
+                      data-slide="next"
+                    >
+                      <span
+                        className="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span className="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div className="modal-footer">
+                  <div className="row">
+                    <div className="col-12">
+                      <p className="card-text">
+                      SBDAnalyzer is a fitness analysis tool that leverages MediaPipe's pose detection framework to provide real-time feedback on lifting videos. The system automatically counts repetitions, analyzes squat depth, and calculates range of motion percentages to help users improve their gym performance with precise, data-driven insights.
                       </p>
                     </div>
                     <div className="col-12 d-flex justify-content-end">
