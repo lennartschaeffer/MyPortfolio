@@ -2,28 +2,27 @@ import myPhoto from "../photos/Me.jpg";
 import { motion } from "framer-motion";
 
 export const About = () => {
-
   const offScreen = {
-    y: 300
-  }
+    y: 300,
+  };
   const onScreen = {
     y: 50,
     transition: {
       type: "spring",
       bounce: 0.4,
-      duration: 0.5
-    }
-  }
+      duration: 0.5,
+    },
+  };
   return (
     <div className="bg-lighter text-dark text-monospace d-flex align-items-center justify-content-center">
-      <div className="card border-0 " style={{background: "#263859"}}>
+      <div className="card border-0 " style={{ background: "#263859" }}>
         <div className="card-body min-vh-100 d-flex flex-column justify-content-center">
           <div className="row pb-5">
             <div className="col-md-3 d-flex flex-column justify-content-center">
               <motion.div
                 initial={offScreen}
                 whileInView={onScreen}
-                viewport={{once:true}}
+                viewport={{ once: true }}
               >
                 <div
                   className="nav bg-card flex-column nav-pills rounded-sm"
@@ -75,7 +74,7 @@ export const About = () => {
               <motion.div
                 initial={offScreen}
                 whileInView={onScreen}
-                viewport={{once:true}}
+                viewport={{ once: true }}
               >
                 <div className="tab-content" id="v-pills-tabContent">
                   <div
@@ -91,7 +90,7 @@ export const About = () => {
                           style={{
                             boxShadow:
                               "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
-                            }}
+                          }}
                         >
                           <div className="card-header ">
                             <h4>A Little Bit About Me</h4>
@@ -150,11 +149,12 @@ export const About = () => {
                               <p>
                                 I am currently pursuing a Bachelor of Computer
                                 Science Degree at Dalhousie University located
-                                in Halifax, NS. Throughout my first year I was
-                                able to maintain a 4.12 cumulative GPA, in
-                                courses such as Intro to Object Oriented
-                                Programming, Intro to Web Development, Intro to
-                                Computer Systems, and Discrete Math.
+                                in Halifax, NS. I have been
+                                able to maintain a 4.16 cumulative GPA in
+                                courses such as Data Structures & Algorithms,
+                                Intro to Database Systems, Software Development,
+                                Linear Algebra, and Intro to Probability &
+                                Statistics.
                               </p>
                               <h6 className="highlighted-text">
                                 Riverview High School
@@ -218,6 +218,9 @@ export const About = () => {
                                     <li className="list-group-item bg-lighter">
                                       Python
                                     </li>
+                                    <li className="list-group-item bg-lighter">
+                                      SQL
+                                    </li>
                                   </ul>
                                 </div>
                                 <div className="col-md-4">
@@ -232,7 +235,10 @@ export const About = () => {
                                       ASP.NET Core Web API's
                                     </li>
                                     <li className="list-group-item bg-lighter">
-                                      Tailwind CSS
+                                      Express.js
+                                    </li>
+                                    <li className="list-group-item bg-lighter">
+                                      Node.js
                                     </li>
                                     <li className="list-group-item bg-lighter">
                                       Bootstrap
