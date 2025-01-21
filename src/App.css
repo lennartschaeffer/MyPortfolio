@@ -19,3 +19,9 @@
 .nav-link{
     cursor: pointer;
 }
+*{
+    font-family: 'DM Sans';
+}
+p,span,h6,li{
+    font-size: 20px;
+}

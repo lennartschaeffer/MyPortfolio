@@ -14,7 +14,7 @@ export const About = () => {
     },
   };
   return (
-    <div className="bg-lighter text-dark text-monospace d-flex align-items-center justify-content-center">
+    <div className="bg-lighter text-dark d-flex align-items-center justify-content-center">
       <div className="card border-0 " style={{ background: "#263859" }}>
         <div className="card-body min-vh-100 d-flex flex-column justify-content-center">
           <div className="row pb-5">
@@ -98,7 +98,7 @@ export const About = () => {
                           <div className="card-body">
                             <div className="row">
                               <div className="col-md-8 d-flex align-items-center">
-                                <p className="text-monospace">
+                                <p className="">
                                   I'm a Dutch/Canadian student, spending most of
                                   my life living on the Caribbean island
                                   Curacao. I grew up loving to play soccer, and
@@ -247,12 +247,12 @@ export const About = () => {
                                 </div>
                                 <div className="col-md-4 mt-3 mt-md-0">
                                   <h6 className="highlighted-text">
-                                    Student Software Developer
+                                    Software Developer Intern
                                   </h6>
                                   <p>
                                     Following the summer of my first year at
                                     Dalhousie, I was able to secure a summer job
-                                    as a Student Software Developer at{" "}
+                                    as a Software Developer Intern at{" "}
                                     <span className="highlighted-text">
                                       Ditech Testing
                                     </span>

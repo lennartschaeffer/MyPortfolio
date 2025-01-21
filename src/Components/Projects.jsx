@@ -577,17 +577,24 @@ export const Projects = () => {
                       ></li>
                       <li data-target="#sbdCarousel" data-slide-to="1"></li>
                       <li data-target="#sbdCarousel" data-slide-to="2"></li>
-                      
                     </ol>
                     <div className="carousel-inner">
                       <div className="carousel-item active">
-                        <img src={squat1} className="d-block w-50 h-50 m-auto" alt="..." />
+                        <img
+                          src={squat1}
+                          className="d-block w-50 h-50 m-auto"
+                          alt="..."
+                        />
                       </div>
                       <div className="carousel-item">
                         <img src={squat2} className="d-block w-100" alt="..." />
                       </div>
                       <div className="carousel-item">
-                        <video src={squatvid} className="d-block w-50 h-50 m-auto" controls />
+                        <video
+                          src={squatvid}
+                          className="d-block w-50 h-50 m-auto"
+                          controls
+                        />
                       </div>
                     </div>
                     <a
@@ -620,7 +627,13 @@ export const Projects = () => {
                   <div className="row">
                     <div className="col-12">
                       <p className="card-text">
-                      SBDAnalyzer is a fitness analysis tool that leverages MediaPipe's pose detection framework to provide real-time feedback on lifting videos. The system automatically counts repetitions, analyzes squat depth, and calculates range of motion percentages to help users improve their gym performance with precise, data-driven insights.
+                        SBDAnalyzer is a fitness analysis tool that leverages
+                        MediaPipe's pose detection framework to provide
+                        real-time feedback on lifting videos. The system
+                        automatically counts repetitions, analyzes squat depth,
+                        and calculates range of motion percentages to help users
+                        improve their gym performance with precise, data-driven
+                        insights.
                       </p>
                     </div>
                     <div className="col-12 d-flex justify-content-end">
