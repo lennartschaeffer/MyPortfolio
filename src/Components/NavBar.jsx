@@ -2,10 +2,10 @@ import { Link } from "react-scroll";
 export const NavBar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark sticky-top text-monospace"
+      className="navbar navbar-expand-lg navbar-dark sticky-top"
       style={{ background: "#17223B" }}
     >
-      <a className="navbar-brand" href="#Home">
+      <a className="navbar-brand font-weight-bold" href="#Home">
         Lennart Schaeffer
       </a>
       <button
